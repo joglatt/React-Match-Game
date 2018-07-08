@@ -3,6 +3,7 @@ import Header from "./header";
 import Frame from "./frame";
 const containerStyle={
   width: '100%',
+  border:'1px solid black'
 
 }
 class Container extends Component {
@@ -23,12 +24,10 @@ class Container extends Component {
     this.randomize();
     if (!this.props.images.clicked.includes(e.target.id)) {
       this.setState({ score: this.state.score + 1 });
-      // console.log(e.target.id);
       this.props.images.clicked.push(e.target.id);
     } else {
       this.randomize();
       this.props.images.clicked = [];
-      // console.log(this.props.images.clicked);
       this.setState({ score: 0 });
     }
   };
