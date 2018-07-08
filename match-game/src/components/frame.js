@@ -19,6 +19,7 @@ class Frame extends Component {
       <div style={frameStyle}>
         {images.array.map(item => (
           <img
+          className={"imageResponsive"}
             onClick={handleClick}
             style={imageStyle}
             src={item.src}

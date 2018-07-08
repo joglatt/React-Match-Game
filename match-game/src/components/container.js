@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import Header from "./header";
 import Frame from "./frame";
+const containerStyle={
+  width: '100%',
 
+}
 class Container extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +35,7 @@ class Container extends Component {
 
   render() {
     return (
-      <div className={"container-fluid"}>
+      <div style={containerStyle}>
         <Header score={this.state.score} />
         <Frame handleClick={this.handleClick} images={this.props.images} />
       </div>

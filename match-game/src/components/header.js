@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 const conStyle={
-    textAlign:"center"
+    textAlign:"center",
+    width:'100%'
     
   }
 class Header extends Component {
