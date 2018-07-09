@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import Header from "./header";
 import Frame from "./frame";
 const containerStyle={
-  width: '100%',
-  border:'1px solid black'
-
+  width: '100%'
 }
 class Container extends Component {
   constructor(props) {
